@@ -394,7 +394,7 @@ backgroundEndElementHandle(void *userData, const XML_Char *name)
 		else if(strcmp(name, "resistance_physical") == 0)
 		{
 			pData->curElement = ELEMENT;
-			pData->curBackground.value[BG_RESI_PHYSICAL] = min(10, max(-10, (INT8) atol(pData->szCharData) ));
+			pData->curBackground.value[BG_RESI_PHYSICAL] = min(100, max(-100, (INT8) atol(pData->szCharData) ));
 		}
 		else if(strcmp(name, "resistance_alcohol") == 0)
 		{
